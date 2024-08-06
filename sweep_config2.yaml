@@ -1,0 +1,13 @@
+name: example-sweep
+method: grid  # You can also use 'random' or 'bayes'
+parameters:
+  learning_rate:
+    values: [1e-5, 5e-5]
+  batch_size:
+    values: [8,16]
+  epochs:
+    values: [3,4]
+  warmup_steps:
+    values: [500]
+  weight_decay:
+    values: [0.01, 0.1]
